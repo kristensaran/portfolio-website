@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio website for frontend web developer Kristen Saran"
+    />
+    <link rel="icon" href="favicon.png" />
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <title>Kristen Saran | Frontend Developer</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#home" class="nav__logo">Kristen</a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">
+                <ion-icon name="home-outline" class="nav__icon"></ion-icon>Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <ion-icon name="person-outline" class="nav__icon"></ion-icon
+                >About
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">
+                <ion-icon name="briefcase-outline" class="nav__icon"></ion-icon
+                >Portfolio
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <ion-icon
+                  name="paper-plane-outline"
+                  class="nav__icon"
+                ></ion-icon
+                >Contact
+              </a>
+            </li>
+          </ul>
+
+          <ion-icon
+            name="close-outline"
+            class="nav__close"
+            id="nav-close"
+          ></ion-icon>
+        </div>
+        <div class="nav-btn">
+          <!-- Change theme button -->
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <ion-icon name="grid-outline"></ion-icon>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Main -->
+    <main class="main">
+      <!-- Home -->
+      <section class="home" id="home">
+        <div class="home__container container grid">
+          <div class="home__content grid">
+            <div class="home__social">
+              <a
+                href="https://www.linkedin.com/in/kristen-saran-7129b764/"
+                class="home__social-icon"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+              <a
+                href="https://github.com/kristensaran"
+                class="home__social-icon"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </div>
+            <div class="home__img-container">
+              <img src="hero-img.png" class="home__img" alt="" />
+            </div>
+            <div class="home__data">
+              <h1 class="home__title">Kristen Saran</h1>
+              <h3 class="home__subtitle">Frontend Developer</h3>
+              <p class="home__description">
+                Web Development/ UI Design/ Photography/ Copywriting
+              </p>
+              <a href="#contact" class="button button--flex"
+                >Contact Me
+                <ion-icon
+                  name="paper-plane-outline"
+                  class="button__icon"
+                ></ion-icon
+              ></a>
+            </div>
+          </div>
+          <div class="home__scroll">
+            <a href="#about" class="home__scroll-button button--flex">
+              <span class="home__scroll-name">Read more</span>
+              <ion-icon
+                name="arrow-down-outline"
+                class="home__scroll-arrow"
+              ></ion-icon>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- About -->
+      <section class="about section" id="about">
+        <h2 class="section__title">About</h2>
+        <span class="section__subtitle">About Me</span>
+        <div class="about__container container grid">
+          <img src="about-img.png" alt="" class="about__img" />
+          <div class="about__traits">
+            <span class="content-tag"
+              >Taurus <ion-icon name="sunny" class="about-icon"></ion-icon
+            ></span>
+            <span class="content-tag"
+              >Virgo<ion-icon name="moon" class="about-icon"></ion-icon
+            ></span>
+            <span class="content-tag"
+              >Libra <ion-icon name="arrow-up" class="about-icon"></ion-icon
+            ></span>
+          </div>
+          <div class="about__data">
+            <p class="about__description">
+              Kristen delivers creative solutions in a direct, concise and
+              timely manner. Extremely practical and highly adaptable to new
+              challenges, she can manage a project independently, collaborate
+              with a large team, or work with clients who have a very 'hands on'
+              approach. Prior to the pandemic, her hobbies included
+              international travel, providing a global perspective that she
+              brings to her projects. She remains apprised of current trends in
+              art and design. She is a graduate of Furman University.
+            </p>
+          </div>
+          <div class="about__buttons">
+            <a
+              download=""
+              href="Kristen Saran - Resume.pdf"
+              class="button button--flex"
+            >
+              Download Resume
+              <ion-icon name="download-outline" class="button__icon"></ion-icon>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Portfolio -->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">Portfolio</h2>
+        <span class="class section__subtitle">Recent work</span>
+        <div class="portfolio__container container swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- Portfolio Item 1 -->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="gallivant-thumbnail-img.png"
+                alt="Thumbnail of home page of Gallivant travel website."
+                class="portfolio__img"
+              />
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">"Gallivant" Website</h3>
+                <span class="content-tag tag--html">HTML</span>
+                <span class="content-tag tag--css">CSS</span>
+                <span class="content-tag tag--js">JS</span>
+                <p class="portfolio__description">
+                  Demo website for a tour and travel company offering customized
+                  local experiences and stays.
+                </p>
+                <a
+                  href="https://celadon-profiterole-600a81.netlify.app/"
+                  class="button button--flex button--small portfolio__button"
+                  >Demo
+                  <ion-icon
+                    name="arrow-forward-outline"
+                    class="button__icon"
+                  ></ion-icon
+                ></a>
+              </div>
+            </div>
+            <!-- Portfolio Item 2 -->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="bassclef-thumbnail-img.png"
+                alt="Thumbnail of homepage of Bassclef music news website."
+                class="portfolio__img"
+              />
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">"Bassclef" Website</h3>
+                <span class="content-tag tag--html">HTML</span>
+                <span class="content-tag tag--css">CSS</span>
+                <span class="content-tag tag--js">JS</span>
+                <p class="portfolio__description">
+                  Demo website for a music website offering news, criticism,
+                  reports, and feature articles.
+                </p>
+                <a
+                  href="https://objective-mclean-4ae2ae.netlify.app/"
+                  class="button button--flex button--small portfolio__button"
+                  >Demo
+                  <ion-icon
+                    name="arrow-forward-outline"
+                    class="button__icon"
+                  ></ion-icon
+                ></a>
+              </div>
+            </div>
+            <!-- Portfolio Item 3 -->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="honor-thumbnail-img.png"
+                alt="Thumbnail image of Honor smoothie and wellness website."
+                class="portfolio__img"
+              />
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">"Honor" Website</h3>
+                <span class="content-tag tag--html">HTML</span>
+                <span class="content-tag tag--css">CSS</span>
+                <span class="content-tag tag--js">JS</span>
+                <p class="portfolio__description">
+                  Demo website for a startup offering a smoothie delivery
+                  service and wellness app.
+                </p>
+                <a
+                  href="https://vibrant-johnson-6a7b2e.netlify.app/"
+                  class="button button--flex button--small portfolio__button"
+                  >Demo
+                  <ion-icon
+                    name="arrow-forward-outline"
+                    class="button__icon"
+                  ></ion-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next">
+            <ion-icon
+              name="chevron-forward-outline"
+              class="swiper-portfolio-icon"
+            ></ion-icon>
+          </div>
+          <div class="swiper-button-prev">
+            <ion-icon
+              name="chevron-back-outline"
+              class="swiper-portfolio-icon"
+            ></ion-icon>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <!-- Contact -->
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contact Me</h2>
+        <span class="section__subtitle">Get in touch</span>
+        <div class="contact__container container grid">
+          <div>
+            <div class="contact__information">
+              <ion-icon name="call-outline" class="contact__icon"></ion-icon>
+              <div>
+                <h3 class="contact__title">Call Me</h3>
+                <span class="contact__subtitle"
+                  ><a href="tel:862-222-3753" style="color: gray"
+                    >862.222.3753</a
+                  ></span
+                >
+              </div>
+            </div>
+            <div class="contact__information">
+              <ion-icon name="mail-outline" class="contact__icon"></ion-icon>
+              <div>
+                <h3 class="contact__title">Email Me</h3>
+                <span class="contact__subtitle"
+                  ><a href="mailto:kristen.saran@gmail.com" style="color: gray"
+                    >kristen.saran@gmail.com</a
+                  >
+                </span>
+              </div>
+            </div>
+          </div>
+          <form
+            name="contact"
+            class="contact__form grid"
+            method="POST"
+            data-netlify="true"
+          >
+            <div class="contact__inputs grid">
+              <div class="contact__content">
+                <label for="Name" class="contact__label">Name</label>
+                <input type="text" class="contact__input" name="full-name" />
+              </div>
+              <div class="contact__content">
+                <label for="Email" class="contact__label">Email</label>
+                <input type="email" class="contact__input" name="email" />
+              </div>
+              <div class="contact__content">
+                <label for="Message" class="contact__label">Message</label>
+                <textarea
+                  name="Message"
+                  id=""
+                  cols="0"
+                  rows="7"
+                  class="contact__input"
+                ></textarea>
+              </div>
+              <button type="submit" class="button button--flex">
+                Send Message
+                <ion-icon
+                  name="paper-plane-outline"
+                  class="button__icon"
+                ></ion-icon>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer__bg">
+    <div class="footer__container container grid">
+      <div>
+        <h1 class="footer__title">Kristen Saran</h1>
+        <span class="footer__subtitle">Frontend developer</span>
+      </div>
+      <ul class="footer__links">
+        <li>
+          <a href="#portfolio" class="footer__link">Portfolio</a>
+        </li>
+        <li>
+          <a href="#contact" class="footer__link">Contact</a>
+        </li>
+      </ul>
+      <div class="footer__socials">
+        <a
+          href="https://www.linkedin.com/in/kristen-saran-7129b764/"
+          class="footer__social"
+          ><ion-icon name="logo-linkedin"></ion-icon
+        ></a>
+        <a href="https://github.com/kristensaran" class="footer__social"
+          ><ion-icon name="logo-github"></ion-icon
+        ></a>
+      </div>
+    </div>
+  </div>
+</footer>
